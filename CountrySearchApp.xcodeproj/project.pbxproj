@@ -9,13 +9,9 @@
 /* Begin PBXBuildFile section */
 		467879A42D77DEFA004146C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879A32D77DEFA004146C4 /* AppDelegate.swift */; };
 		467879A62D77DEFA004146C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879A52D77DEFA004146C4 /* SceneDelegate.swift */; };
-		467879A82D77DEFA004146C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879A72D77DEFA004146C4 /* ViewController.swift */; };
-		467879AB2D77DEFA004146C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467879A92D77DEFA004146C4 /* Main.storyboard */; };
 		467879AD2D77DEFD004146C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467879AC2D77DEFD004146C4 /* Assets.xcassets */; };
 		467879B02D77DEFD004146C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467879AE2D77DEFD004146C4 /* LaunchScreen.storyboard */; };
 		467879BB2D77DEFE004146C4 /* CountrySearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879BA2D77DEFE004146C4 /* CountrySearchAppTests.swift */; };
-		467879C52D77DEFE004146C4 /* CountrySearchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879C42D77DEFE004146C4 /* CountrySearchAppUITests.swift */; };
-		467879C72D77DEFE004146C4 /* CountrySearchAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879C62D77DEFE004146C4 /* CountrySearchAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +35,12 @@
 		467879A02D77DEFA004146C4 /* CountrySearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountrySearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467879A32D77DEFA004146C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		467879A52D77DEFA004146C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		467879A72D77DEFA004146C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		467879AA2D77DEFA004146C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		467879AC2D77DEFD004146C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		467879AF2D77DEFD004146C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467879B12D77DEFD004146C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		467879B62D77DEFE004146C4 /* CountrySearchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountrySearchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		467879BA2D77DEFE004146C4 /* CountrySearchAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchAppTests.swift; sourceTree = "<group>"; };
 		467879C02D77DEFE004146C4 /* CountrySearchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountrySearchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		467879C42D77DEFE004146C4 /* CountrySearchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchAppUITests.swift; sourceTree = "<group>"; };
-		467879C62D77DEFE004146C4 /* CountrySearchAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySearchAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +73,6 @@
 			children = (
 				467879A22D77DEFA004146C4 /* CountrySearchApp */,
 				467879B92D77DEFE004146C4 /* CountrySearchAppTests */,
-				467879C32D77DEFE004146C4 /* CountrySearchAppUITests */,
 				467879A12D77DEFA004146C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,8 +92,6 @@
 			children = (
 				467879A32D77DEFA004146C4 /* AppDelegate.swift */,
 				467879A52D77DEFA004146C4 /* SceneDelegate.swift */,
-				467879A72D77DEFA004146C4 /* ViewController.swift */,
-				467879A92D77DEFA004146C4 /* Main.storyboard */,
 				467879AC2D77DEFD004146C4 /* Assets.xcassets */,
 				467879AE2D77DEFD004146C4 /* LaunchScreen.storyboard */,
 				467879B12D77DEFD004146C4 /* Info.plist */,
@@ -116,15 +105,6 @@
 				467879BA2D77DEFE004146C4 /* CountrySearchAppTests.swift */,
 			);
 			path = CountrySearchAppTests;
-			sourceTree = "<group>";
-		};
-		467879C32D77DEFE004146C4 /* CountrySearchAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				467879C42D77DEFE004146C4 /* CountrySearchAppUITests.swift */,
-				467879C62D77DEFE004146C4 /* CountrySearchAppUITestsLaunchTests.swift */,
-			);
-			path = CountrySearchAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +213,6 @@
 			files = (
 				467879B02D77DEFD004146C4 /* LaunchScreen.storyboard in Resources */,
 				467879AD2D77DEFD004146C4 /* Assets.xcassets in Resources */,
-				467879AB2D77DEFA004146C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				467879A82D77DEFA004146C4 /* ViewController.swift in Sources */,
 				467879A42D77DEFA004146C4 /* AppDelegate.swift in Sources */,
 				467879A62D77DEFA004146C4 /* SceneDelegate.swift in Sources */,
 			);
@@ -276,8 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				467879C52D77DEFE004146C4 /* CountrySearchAppUITests.swift in Sources */,
-				467879C72D77DEFE004146C4 /* CountrySearchAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +273,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		467879A92D77DEFA004146C4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				467879AA2D77DEFA004146C4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		467879AE2D77DEFD004146C4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -445,21 +413,28 @@
 				DEVELOPMENT_TEAM = HYG7Z8PXLW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CountrySearchApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CountrySearchApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bdaiat.CountrySearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,21 +448,28 @@
 				DEVELOPMENT_TEAM = HYG7Z8PXLW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CountrySearchApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CountrySearchApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bdaiat.CountrySearchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
