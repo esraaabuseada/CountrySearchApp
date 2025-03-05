@@ -24,6 +24,8 @@
 		46787A052D78962E004146C4 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879F82D78962E004146C4 /* UINavigationController+Extension.swift */; };
 		46787A062D78962E004146C4 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879F92D78962E004146C4 /* Bundle+Extension.swift */; };
 		46787A072D78962E004146C4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879FA2D78962E004146C4 /* String+Extension.swift */; };
+		468430B22D789FF000C2B7C6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468430B12D789FF000C2B7C6 /* Colors.xcassets */; };
+		468430B42D78A0B700C2B7C6 /* Assets+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430B32D78A0B700C2B7C6 /* Assets+Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		467879F82D78962E004146C4 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		467879F92D78962E004146C4 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		467879FA2D78962E004146C4 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		468430B12D789FF000C2B7C6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		468430B32D78A0B700C2B7C6 /* Assets+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Colors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,9 +212,9 @@
 		468430A82D789D8A00C2B7C6 /* Assets+Colors */ = {
 			isa = PBXGroup;
 			children = (
-				468430AA2D789DB100C2B7C6 /* Generated */,
-				468430A92D789DA400C2B7C6 /* Colors */,
 				467879AC2D77DEFD004146C4 /* Assets.xcassets */,
+				468430A92D789DA400C2B7C6 /* Colors */,
+				468430AA2D789DB100C2B7C6 /* Generated */,
 			);
 			path = "Assets+Colors";
 			sourceTree = "<group>";
@@ -218,6 +222,7 @@
 		468430A92D789DA400C2B7C6 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				468430B12D789FF000C2B7C6 /* Colors.xcassets */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 		468430AA2D789DB100C2B7C6 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				468430B32D78A0B700C2B7C6 /* Assets+Colors.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 				4678799C2D77DEFA004146C4 /* Sources */,
 				4678799D2D77DEFA004146C4 /* Frameworks */,
 				4678799E2D77DEFA004146C4 /* Resources */,
+				468430B52D78A0DC00C2B7C6 /* Swiftgen */,
 			);
 			buildRules = (
 			);
@@ -376,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				467879B02D77DEFD004146C4 /* LaunchScreen.storyboard in Resources */,
+				468430B22D789FF000C2B7C6 /* Colors.xcassets in Resources */,
 				467879ED2D789558004146C4 /* PrivacyInfo.xcprivacy in Resources */,
 				467879AD2D77DEFD004146C4 /* Assets.xcassets in Resources */,
 			);
@@ -397,6 +405,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		468430B52D78A0DC00C2B7C6 /* Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftgen > /dev/null; then\n  swiftgen config run --config \"${PROJECT_DIR}/.swiftgen.yml\"\nelse\n  echo \"warning: SwiftGen is not installed, skipping code generation.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4678799C2D77DEFA004146C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -414,6 +443,7 @@
 				467879FE2D78962E004146C4 /* Int+Extension.swift in Sources */,
 				467879FF2D78962E004146C4 /* Date+Extension.swift in Sources */,
 				46787A002D78962E004146C4 /* UIImage+Extrension.swift in Sources */,
+				468430B42D78A0B700C2B7C6 /* Assets+Colors.swift in Sources */,
 				46787A072D78962E004146C4 /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
