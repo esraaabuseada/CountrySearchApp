@@ -14,8 +14,8 @@ xcassets:
     - templateName: swift5
       output: Assets+Colors/Generated/Assets+Colors.swift
 
-#fonts:
-  #inputs: Fonts
-  #outputs:
-   # templateName: swift5
-    #output: Fonts/Generated/Fonts.swift
+fonts:
+  inputs: Fonts
+  outputs:
+    templateName: swift5
+    output: Fonts/Generated/Fonts.swift
