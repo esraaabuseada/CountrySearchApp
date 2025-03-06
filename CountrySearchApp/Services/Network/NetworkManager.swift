@@ -18,15 +18,16 @@ enum NetworkError: Error {
 
 class NetworkManager {
     
-    // Shared instance (singleton)
-    static let shared = NetworkManager()
+    
+    static var shared: NetworkManager!
     
     private let session: Session
     
-    // Private initializer for Singleton
-    private init() {
+     init() {
+       
         let configuration = URLSessionConfiguration.default
         session = Session(configuration: configuration)
+         NetworkManager.shared = self
     }
     
     // MARK: - Generic GET Request Method
