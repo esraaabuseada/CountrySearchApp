@@ -37,6 +37,8 @@
 		468430CB2D791CA600C2B7C6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 468430C92D791CA600C2B7C6 /* HomeViewController.xib */; };
 		468430CF2D791E9600C2B7C6 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430CD2D791E9600C2B7C6 /* HomeCell.swift */; };
 		468430D02D791E9600C2B7C6 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 468430CE2D791E9600C2B7C6 /* HomeCell.xib */; };
+		468430D32D795B0B00C2B7C6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430D22D795B0B00C2B7C6 /* Country.swift */; };
+		468430D52D795B2D00C2B7C6 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430D42D795B2D00C2B7C6 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		468430C92D791CA600C2B7C6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		468430CD2D791E9600C2B7C6 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		468430CE2D791E9600C2B7C6 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		468430D22D795B0B00C2B7C6 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		468430D42D795B2D00C2B7C6 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,8 @@
 		46787A142D7899C5004146C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				468430D22D795B0B00C2B7C6 /* Country.swift */,
+				468430D42D795B2D00C2B7C6 /* Currency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -515,7 +521,9 @@
 				468430BE2D78A37200C2B7C6 /* Fonts.swift in Sources */,
 				46787A062D78962E004146C4 /* Bundle+Extension.swift in Sources */,
 				468430C52D791C7D00C2B7C6 /* HomeWireFrame.swift in Sources */,
+				468430D52D795B2D00C2B7C6 /* Currency.swift in Sources */,
 				467879A62D77DEFA004146C4 /* SceneDelegate.swift in Sources */,
+				468430D32D795B0B00C2B7C6 /* Country.swift in Sources */,
 				467879FC2D78962E004146C4 /* UIImageView+Extension.swift in Sources */,
 				46787A022D78962E004146C4 /* UIButton+Extension.swift in Sources */,
 				46787A032D78962E004146C4 /* NSObject+Extension.swift in Sources */,
