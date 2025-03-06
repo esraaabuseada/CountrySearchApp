@@ -15,6 +15,12 @@
 		461D14802D79EE7A00D9EE96 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D147F2D79EE7A00D9EE96 /* Container.swift */; };
 		461D14822D79EE8800D9EE96 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D14812D79EE8800D9EE96 /* Constants.swift */; };
 		461D14892D79F01500D9EE96 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D14882D79F01500D9EE96 /* AppNavigationController.swift */; };
+		461D148D2D7A2DA000D9EE96 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D148B2D7A2DA000D9EE96 /* Loader.swift */; };
+		461D148E2D7A2DA000D9EE96 /* LoaderProtocole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D148C2D7A2DA000D9EE96 /* LoaderProtocole.swift */; };
+		461D14912D7A2DAC00D9EE96 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D148F2D7A2DAC00D9EE96 /* BaseViewController.swift */; };
+		461D14922D7A2DAC00D9EE96 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D14902D7A2DAC00D9EE96 /* BaseViewModel.swift */; };
+		461D14952D7A430C00D9EE96 /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = 461D14942D7A430C00D9EE96 /* PanModal */; };
+		461D14972D7A4AD700D9EE96 /* CountriesWireFreme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461D14962D7A4AD700D9EE96 /* CountriesWireFreme.swift */; };
 		467879A42D77DEFA004146C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879A32D77DEFA004146C4 /* AppDelegate.swift */; };
 		467879A62D77DEFA004146C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879A52D77DEFA004146C4 /* SceneDelegate.swift */; };
 		467879AD2D77DEFD004146C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467879AC2D77DEFD004146C4 /* Assets.xcassets */; };
@@ -77,6 +83,11 @@
 		461D147F2D79EE7A00D9EE96 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		461D14812D79EE8800D9EE96 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		461D14882D79F01500D9EE96 /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		461D148B2D7A2DA000D9EE96 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		461D148C2D7A2DA000D9EE96 /* LoaderProtocole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderProtocole.swift; sourceTree = "<group>"; };
+		461D148F2D7A2DAC00D9EE96 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		461D14902D7A2DAC00D9EE96 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		461D14962D7A4AD700D9EE96 /* CountriesWireFreme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesWireFreme.swift; sourceTree = "<group>"; };
 		467879A02D77DEFA004146C4 /* CountrySearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountrySearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467879A32D77DEFA004146C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		467879A52D77DEFA004146C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +135,7 @@
 			files = (
 				468430DB2D79610000C2B7C6 /* Alamofire in Frameworks */,
 				461D147B2D79ED7000D9EE96 /* IQKeyboardManagerSwift in Frameworks */,
+				461D14952D7A430C00D9EE96 /* PanModal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +172,15 @@
 				461D14882D79F01500D9EE96 /* AppNavigationController.swift */,
 			);
 			path = AppNavigationController;
+			sourceTree = "<group>";
+		};
+		461D148A2D7A2DA000D9EE96 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				461D148B2D7A2DA000D9EE96 /* Loader.swift */,
+				461D148C2D7A2DA000D9EE96 /* LoaderProtocole.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 		467879972D77DEF9004146C4 = {
@@ -237,6 +258,7 @@
 		46787A132D7899AC004146C4 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				461D148A2D7A2DA000D9EE96 /* Loader */,
 				461D14872D79F01500D9EE96 /* AppNavigationController */,
 			);
 			path = Custom;
@@ -262,6 +284,8 @@
 		46787A1E2D789B13004146C4 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				461D148F2D7A2DAC00D9EE96 /* BaseViewController.swift */,
+				461D14902D7A2DAC00D9EE96 /* BaseViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -398,6 +422,7 @@
 				468430D82D79608B00C2B7C6 /* ViewModel */,
 				468430D72D79608300C2B7C6 /* View */,
 				468430DF2D7962C400C2B7C6 /* CountriesWebService.swift */,
+				461D14962D7A4AD700D9EE96 /* CountriesWireFreme.swift */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -446,6 +471,7 @@
 			packageProductDependencies = (
 				468430DA2D79610000C2B7C6 /* Alamofire */,
 				461D147A2D79ED7000D9EE96 /* IQKeyboardManagerSwift */,
+				461D14942D7A430C00D9EE96 /* PanModal */,
 			);
 			productName = CountrySearchApp;
 			productReference = 467879A02D77DEFA004146C4 /* CountrySearchApp.app */;
@@ -522,6 +548,7 @@
 			packageReferences = (
 				468430D92D79610000C2B7C6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				461D14792D79ED7000D9EE96 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				461D14932D7A430C00D9EE96 /* XCRemoteSwiftPackageReference "PanModal" */,
 			);
 			productRefGroup = 467879A12D77DEFA004146C4 /* Products */;
 			projectDirPath = "";
@@ -575,6 +602,7 @@
 			files = (
 				468430DE2D79624C00C2B7C6 /* NetworkManager.swift in Sources */,
 				467879A42D77DEFA004146C4 /* AppDelegate.swift in Sources */,
+				461D14912D7A2DAC00D9EE96 /* BaseViewController.swift in Sources */,
 				468430C72D791C9500C2B7C6 /* HomeViewModel.swift in Sources */,
 				468430E22D79663300C2B7C6 /* CountriesViewModel.swift in Sources */,
 				468430CA2D791CA600C2B7C6 /* HomeViewController.swift in Sources */,
@@ -591,17 +619,21 @@
 				46787A022D78962E004146C4 /* UIButton+Extension.swift in Sources */,
 				461D14752D79D11D00D9EE96 /* CountriesViewController.swift in Sources */,
 				46787A032D78962E004146C4 /* NSObject+Extension.swift in Sources */,
+				461D14922D7A2DAC00D9EE96 /* BaseViewModel.swift in Sources */,
 				468430C32D791C6C00C2B7C6 /* HomeWebService.swift in Sources */,
 				46787A052D78962E004146C4 /* UINavigationController+Extension.swift in Sources */,
 				468430E02D7962C400C2B7C6 /* CountriesWebService.swift in Sources */,
+				461D148D2D7A2DA000D9EE96 /* Loader.swift in Sources */,
 				46787A042D78962E004146C4 /* UIView+Extension.swift in Sources */,
 				468430CF2D791E9600C2B7C6 /* HomeCell.swift in Sources */,
 				467879FE2D78962E004146C4 /* Int+Extension.swift in Sources */,
+				461D14972D7A4AD700D9EE96 /* CountriesWireFreme.swift in Sources */,
 				467879FF2D78962E004146C4 /* Date+Extension.swift in Sources */,
 				46787A002D78962E004146C4 /* UIImage+Extrension.swift in Sources */,
 				468430B42D78A0B700C2B7C6 /* Assets+Colors.swift in Sources */,
 				461D14802D79EE7A00D9EE96 /* Container.swift in Sources */,
 				461D14782D79ED1200D9EE96 /* AppDelegate+Extension.swift in Sources */,
+				461D148E2D7A2DA000D9EE96 /* LoaderProtocole.swift in Sources */,
 				46787A072D78962E004146C4 /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -963,6 +995,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		461D14932D7A430C00D9EE96 /* XCRemoteSwiftPackageReference "PanModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.6;
+			};
+		};
 		468430D92D79610000C2B7C6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -978,6 +1018,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 461D14792D79ED7000D9EE96 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		461D14942D7A430C00D9EE96 /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 461D14932D7A430C00D9EE96 /* XCRemoteSwiftPackageReference "PanModal" */;
+			productName = PanModal;
 		};
 		468430DA2D79610000C2B7C6 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

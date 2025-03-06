@@ -11,6 +11,11 @@ import UIKit
 class Container {
     
    
+    class func getCountriesViewControllerr(
+        viewModel: CountriesViewModel = CountriesViewModel()) -> UIViewController {
+            let viewController = CountriesModule.createModule(viewModel: viewModel)
+        return viewController
+    }
     
     class func embedVCInNavController(_ viewController: UIViewController) -> UIViewController {
         let nav = AppNavigationController(rootViewController: viewController)

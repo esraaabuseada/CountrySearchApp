@@ -80,6 +80,15 @@
         "revision" : "76f514eba5218bdf67659168ba227c77da5f75fe",
         "version" : "1.0.5"
       }
+    },
+    {
+      "identity" : "panmodal",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/slackhq/PanModal.git",
+      "state" : {
+        "revision" : "7f07cdff274997b4c860d51d719ef1c88bf37a40",
+        "version" : "1.2.6"
+      }
     }
   ],
   "version" : 2

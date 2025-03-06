@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 
-class CountryViewModel: ObservableObject {
+class CountriesViewModel: BaseViewModel, ObservableObject {
     
     private weak var service: CountriesWebServiceProtocol!
     
@@ -22,22 +22,25 @@ class CountryViewModel: ObservableObject {
     
     init(service: CountriesWebServiceProtocol = CountriesWebService.shared) {
         self.service = service
-        fetchCountries()
     }
     
     
     func fetchCountries() {
-        
+        self.isLoading = true // Start loading
         service.fetchCountries { [weak self] result in
             guard let `self` = self else { return }
             switch result {
             case .success(let countries):
-                DispatchQueue.main.async {
+               
                     self.countries = countries
-                }
+                    self.filteredCountries = countries
+                    self.isLoading = false // Stop loading
+                    
+           
             case .failure(let error):
                 DispatchQueue.main.async {
                     self.errorMessage = "Failed to load countries: \(error.localizedDescription)"
+                    self.isLoading = false // Stop loading
                 }
             }
         }
