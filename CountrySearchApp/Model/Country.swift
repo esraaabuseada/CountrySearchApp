@@ -12,7 +12,7 @@ struct Country: Codable {
     let name: String?
     let capital: String?
     let currencies: [Currency] = []
-    
+   
     
     enum CodingKeys: String, CodingKey {
         
