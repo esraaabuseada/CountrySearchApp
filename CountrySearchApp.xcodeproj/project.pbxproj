@@ -291,6 +291,7 @@
 		468430AE2D789E6500C2B7C6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				468430D62D79607A00C2B7C6 /* Countries */,
 				468430BF2D791C3100C2B7C6 /* Home */,
 			);
 			path = Scenes;
@@ -354,6 +355,29 @@
 				468430CE2D791E9600C2B7C6 /* HomeCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		468430D62D79607A00C2B7C6 /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				468430D82D79608B00C2B7C6 /* ViewModel */,
+				468430D72D79608300C2B7C6 /* View */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		468430D72D79608300C2B7C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		468430D82D79608B00C2B7C6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
