@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Country: Codable {
-    
-    let name: String?
+struct Country: Codable, Identifiable {
+    var id: String { name }
+    let name: String
     let capital: String?
     let currencies: [Currency] = []
    

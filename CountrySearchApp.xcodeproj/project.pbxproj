@@ -17,7 +17,6 @@
 		467879FE2D78962E004146C4 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879F12D78962E004146C4 /* Int+Extension.swift */; };
 		467879FF2D78962E004146C4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879F22D78962E004146C4 /* Date+Extension.swift */; };
 		46787A002D78962E004146C4 /* UIImage+Extrension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879F32D78962E004146C4 /* UIImage+Extrension.swift */; };
-		46787A012D78962E004146C4 /* Localization+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879F42D78962E004146C4 /* Localization+Extension.swift */; };
 		46787A022D78962E004146C4 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879F52D78962E004146C4 /* UIButton+Extension.swift */; };
 		46787A032D78962E004146C4 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879F62D78962E004146C4 /* NSObject+Extension.swift */; };
 		46787A042D78962E004146C4 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467879F72D78962E004146C4 /* UIView+Extension.swift */; };
@@ -39,6 +38,10 @@
 		468430D02D791E9600C2B7C6 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 468430CE2D791E9600C2B7C6 /* HomeCell.xib */; };
 		468430D32D795B0B00C2B7C6 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430D22D795B0B00C2B7C6 /* Country.swift */; };
 		468430D52D795B2D00C2B7C6 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430D42D795B2D00C2B7C6 /* Currency.swift */; };
+		468430DB2D79610000C2B7C6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 468430DA2D79610000C2B7C6 /* Alamofire */; };
+		468430DE2D79624C00C2B7C6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430DD2D79624C00C2B7C6 /* NetworkManager.swift */; };
+		468430E02D7962C400C2B7C6 /* CountriesWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430DF2D7962C400C2B7C6 /* CountriesWebService.swift */; };
+		468430E22D79663300C2B7C6 /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430E12D79663300C2B7C6 /* CountriesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +76,6 @@
 		467879F12D78962E004146C4 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		467879F22D78962E004146C4 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		467879F32D78962E004146C4 /* UIImage+Extrension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extrension.swift"; sourceTree = "<group>"; };
-		467879F42D78962E004146C4 /* Localization+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Localization+Extension.swift"; sourceTree = "<group>"; };
 		467879F52D78962E004146C4 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		467879F62D78962E004146C4 /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		467879F72D78962E004146C4 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -95,6 +97,9 @@
 		468430CE2D791E9600C2B7C6 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		468430D22D795B0B00C2B7C6 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		468430D42D795B2D00C2B7C6 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		468430DD2D79624C00C2B7C6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		468430DF2D7962C400C2B7C6 /* CountriesWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesWebService.swift; sourceTree = "<group>"; };
+		468430E12D79663300C2B7C6 /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468430DB2D79610000C2B7C6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +161,6 @@
 				468430AE2D789E6500C2B7C6 /* Scenes */,
 				468430AF2D789E7F00C2B7C6 /* Services */,
 				46787A1B2D789A4F004146C4 /* StoryBoard */,
-				468430B02D789EA500C2B7C6 /* NetworkServices */,
 			);
 			path = CountrySearchApp;
 			sourceTree = "<group>";
@@ -175,7 +180,6 @@
 				467879F12D78962E004146C4 /* Int+Extension.swift */,
 				467879F22D78962E004146C4 /* Date+Extension.swift */,
 				467879F32D78962E004146C4 /* UIImage+Extrension.swift */,
-				467879F42D78962E004146C4 /* Localization+Extension.swift */,
 				467879F52D78962E004146C4 /* UIButton+Extension.swift */,
 				467879F62D78962E004146C4 /* NSObject+Extension.swift */,
 				467879F72D78962E004146C4 /* UIView+Extension.swift */,
@@ -300,15 +304,9 @@
 		468430AF2D789E7F00C2B7C6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				468430DC2D79623900C2B7C6 /* Network */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		468430B02D789EA500C2B7C6 /* NetworkServices */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetworkServices;
 			sourceTree = "<group>";
 		};
 		468430BC2D78A2DC00C2B7C6 /* Generated */ = {
@@ -362,6 +360,7 @@
 			children = (
 				468430D82D79608B00C2B7C6 /* ViewModel */,
 				468430D72D79608300C2B7C6 /* View */,
+				468430DF2D7962C400C2B7C6 /* CountriesWebService.swift */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -376,8 +375,17 @@
 		468430D82D79608B00C2B7C6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				468430E12D79663300C2B7C6 /* CountriesViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		468430DC2D79623900C2B7C6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				468430DD2D79624C00C2B7C6 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,13 +398,15 @@
 				4678799C2D77DEFA004146C4 /* Sources */,
 				4678799D2D77DEFA004146C4 /* Frameworks */,
 				4678799E2D77DEFA004146C4 /* Resources */,
-				468430B52D78A0DC00C2B7C6 /* Swiftgen */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CountrySearchApp;
+			packageProductDependencies = (
+				468430DA2D79610000C2B7C6 /* Alamofire */,
+			);
 			productName = CountrySearchApp;
 			productReference = 467879A02D77DEFA004146C4 /* CountrySearchApp.app */;
 			productType = "com.apple.product-type.application";
@@ -469,6 +479,9 @@
 				Base,
 			);
 			mainGroup = 467879972D77DEF9004146C4;
+			packageReferences = (
+				468430D92D79610000C2B7C6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 467879A12D77DEFA004146C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -513,34 +526,15 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		468430B52D78A0DC00C2B7C6 /* Swiftgen */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Swiftgen;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftgen > /dev/null; then\n  swiftgen config run --config \"${PROJECT_DIR}/.swiftgen.yml\"\nelse\n  echo \"warning: SwiftGen is not installed, skipping code generation.\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		4678799C2D77DEFA004146C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468430DE2D79624C00C2B7C6 /* NetworkManager.swift in Sources */,
 				467879A42D77DEFA004146C4 /* AppDelegate.swift in Sources */,
 				468430C72D791C9500C2B7C6 /* HomeViewModel.swift in Sources */,
+				468430E22D79663300C2B7C6 /* CountriesViewModel.swift in Sources */,
 				468430CA2D791CA600C2B7C6 /* HomeViewController.swift in Sources */,
 				468430BE2D78A37200C2B7C6 /* Fonts.swift in Sources */,
 				46787A062D78962E004146C4 /* Bundle+Extension.swift in Sources */,
@@ -553,7 +547,7 @@
 				46787A032D78962E004146C4 /* NSObject+Extension.swift in Sources */,
 				468430C32D791C6C00C2B7C6 /* HomeWebService.swift in Sources */,
 				46787A052D78962E004146C4 /* UINavigationController+Extension.swift in Sources */,
-				46787A012D78962E004146C4 /* Localization+Extension.swift in Sources */,
+				468430E02D7962C400C2B7C6 /* CountriesWebService.swift in Sources */,
 				46787A042D78962E004146C4 /* UIView+Extension.swift in Sources */,
 				468430CF2D791E9600C2B7C6 /* HomeCell.swift in Sources */,
 				467879FE2D78962E004146C4 /* Int+Extension.swift in Sources */,
@@ -911,6 +905,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		468430D92D79610000C2B7C6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		468430DA2D79610000C2B7C6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 468430D92D79610000C2B7C6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 467879982D77DEF9004146C4 /* Project object */;
 }
