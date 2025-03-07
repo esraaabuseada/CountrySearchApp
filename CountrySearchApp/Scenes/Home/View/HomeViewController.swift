@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import SwiftUI
 
 class HomeViewController: BaseViewController {
     
@@ -117,6 +118,15 @@ extension HomeViewController {
            
         }
     
+    // Navigate to the SwiftUI detail view when a row is tapped
+      private func goToCountryDetails(country: Country) {
+           let swiftUIView = CountryDetailView(country: country)
+           let hostingController = UIHostingController(rootView: swiftUIView)
+          DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
+              self.present(hostingController, animated: true, completion: nil)
+          })
+       }
+    
 }
 
 
@@ -144,6 +154,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            if let country = countriesViewModel?.selectedCountries[indexPath.row] {
                // goto Details Screen
+               self.goToCountryDetails(country: country)
            }
        }
        
