@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="cairo.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="CountrySearchApp" customModuleProvider="target">
+            <connections>
+                <outlet property="countriesTableView" destination="qHT-jF-vAh" id="4Zi-J4-hLe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txb-BV-wYs" userLabel="ContainerView">
+                    <rect key="frame" x="0.0" y="74" width="393" height="778"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLU-bp-okg" userLabel="TitleContainerView">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yca-sZ-6bK" userLabel="TitleStack View">
+                                    <rect key="frame" x="15" y="0.0" width="368" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acw-JM-D6m">
+                                            <rect key="frame" x="0.0" y="0.0" width="308" height="44"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="19"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qa-Zy-PxJ">
+                                            <rect key="frame" x="308" y="0.0" width="60" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="oCa-Ur-lvh"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="addCountryTapped:" destination="-1" eventType="touchUpInside" id="MSm-TS-WDe"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPD-aw-Efb" userLabel="SeparatorView">
+                                    <rect key="frame" x="0.0" y="49" width="393" height="1"/>
+                                    <color key="backgroundColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="BGg-Tu-yR4"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="yca-sZ-6bK" secondAttribute="trailing" constant="10" id="96h-hN-2ZF"/>
+                                <constraint firstItem="yca-sZ-6bK" firstAttribute="top" secondItem="rLU-bp-okg" secondAttribute="top" id="FDP-tZ-r93"/>
+                                <constraint firstAttribute="height" constant="50" id="Hjq-Vi-xgW"/>
+                                <constraint firstItem="IPD-aw-Efb" firstAttribute="leading" secondItem="rLU-bp-okg" secondAttribute="leading" id="PvC-WE-NQa"/>
+                                <constraint firstItem="yca-sZ-6bK" firstAttribute="leading" secondItem="rLU-bp-okg" secondAttribute="leading" constant="15" id="Rnt-tw-xd8"/>
+                                <constraint firstItem="IPD-aw-Efb" firstAttribute="top" secondItem="yca-sZ-6bK" secondAttribute="bottom" constant="5" id="Wy0-Yv-IGA"/>
+                                <constraint firstAttribute="trailing" secondItem="IPD-aw-Efb" secondAttribute="trailing" id="fX3-Dk-jCZ"/>
+                                <constraint firstAttribute="bottom" secondItem="IPD-aw-Efb" secondAttribute="bottom" id="vGl-rn-rRW"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qHT-jF-vAh">
+                            <rect key="frame" x="0.0" y="60" width="393" height="718"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="rLU-bp-okg" secondAttribute="trailing" id="18l-Ym-qO0"/>
+                        <constraint firstItem="qHT-jF-vAh" firstAttribute="leading" secondItem="txb-BV-wYs" secondAttribute="leading" id="6FY-cF-9bP"/>
+                        <constraint firstItem="rLU-bp-okg" firstAttribute="leading" secondItem="txb-BV-wYs" secondAttribute="leading" id="L6T-t5-RzZ"/>
+                        <constraint firstAttribute="trailing" secondItem="qHT-jF-vAh" secondAttribute="trailing" id="OIa-dT-jTs"/>
+                        <constraint firstItem="qHT-jF-vAh" firstAttribute="top" secondItem="rLU-bp-okg" secondAttribute="bottom" constant="10" id="TVb-bl-s6C"/>
+                        <constraint firstItem="rLU-bp-okg" firstAttribute="top" secondItem="txb-BV-wYs" secondAttribute="top" id="rF1-tn-UjH"/>
+                        <constraint firstAttribute="bottom" secondItem="qHT-jF-vAh" secondAttribute="bottom" id="uMx-dq-4Gu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="txb-BV-wYs" secondAttribute="trailing" id="IVr-nE-MgS"/>
+                <constraint firstItem="txb-BV-wYs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="bhj-CZ-6lA"/>
+                <constraint firstItem="txb-BV-wYs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lj7-pZ-GZ7"/>
+                <constraint firstAttribute="bottom" secondItem="txb-BV-wYs" secondAttribute="bottom" id="uSI-oX-cQI"/>
+            </constraints>
+            <point key="canvasLocation" x="25" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
