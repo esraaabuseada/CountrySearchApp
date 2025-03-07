@@ -1,0 +1,21 @@
+
+input_dir: CountrySearchApp/Resources
+output_dir: CountrySearchApp/Resources
+
+
+## Generate constants for your localized strings.
+##   Be sure that SwiftGen only parses ONE locale (typically Base.lproj, or en.lproj, or whichever your development region is); otherwise it will generate the same keys multiple times.
+
+xcassets:
+  inputs:
+    - Assets+Colors/Assets.xcassets
+    - Assets+Colors/Colors/Colors.xcassets
+  outputs:
+    - templateName: swift5
+      output: Assets+Colors/Generated/Assets+Colors.swift
+
+fonts:
+  inputs: Fonts
+  outputs:
+    templateName: swift5
+    output: Fonts/Generated/Fonts.swift
