@@ -30,7 +30,7 @@ internal enum Asset {
   }
   internal enum Colors {
     internal static let loaderBackground = ColorAsset(name: "LoaderBackground")
-    internal static let primaryColor = ColorAsset(name: "PrimaryColor")
+    internal static let primaryAppColor = ColorAsset(name: "PrimaryAppColor")
     internal static let secondryColor = ColorAsset(name: "SecondryColor")
     internal static let titlesTextColor = ColorAsset(name: "TitlesTextColor")
   }

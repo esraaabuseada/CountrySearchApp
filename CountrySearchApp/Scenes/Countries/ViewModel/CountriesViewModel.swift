@@ -92,13 +92,16 @@ class CountriesViewModel: BaseViewModel, ObservableObject {
                // Handle location updates and permission denial
                self.locationManager.locationPublisher()
                    .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] location in
-                       self?.findNearestCountryBasedOnLocation(location)
+                       guard let `self` = self else { return }
+                       self.findNearestCountryBasedOnLocation(location)
                    })
                    .store(in: &cancellables)
                
                self.locationManager.permissionDeniedPublisher()
                    .sink { [weak self] in
-                     //  self?.fetchFallbackCountry()
+                       guard let `self` = self else { return }
+                       self.errorMessage = "Please Give Location Access Permision"
+                       self.fallbackCountry()
                    }
                    .store(in: &cancellables)
     }
@@ -120,5 +123,13 @@ class CountriesViewModel: BaseViewModel, ObservableObject {
                }
        
     }
+    
+    // Fallback logic when location is denied
+       private func fallbackCountry() {
+           // If location permission is denied, just show a default country or any other fallback
+           if let firstCountry = countries.first {
+               self.selectedCountries.append(firstCountry) // Fallback to the first country in the list
+           }
+       }
 }
 

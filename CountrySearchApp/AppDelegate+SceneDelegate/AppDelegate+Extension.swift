@@ -17,8 +17,7 @@ extension AppDelegate {
     func setUpKeyboard() {
         IQKeyboardManager.shared.isEnabled = true
         IQKeyboardManager.shared.resignOnTouchOutside = true
-        
-        IQKeyboardManager.shared.toolbarConfiguration.tintColor = Asset.Colors.primaryColor.color
+        IQKeyboardManager.shared.toolbarConfiguration.tintColor = Asset.Colors.primaryAppColor.color
     }
     
     func setRoot() {

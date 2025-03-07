@@ -23,8 +23,8 @@ class Loader: NSObject {
         spinnerView.backgroundColor = UIColor.gray
     
         let viewBackgroundLoading: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
-        let activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
-        activityIndicator.color = Asset.Colors.primaryColor.color
+        let activityIndicator = UIActivityIndicatorView(style: .large)
+        activityIndicator.color = Asset.Colors.primaryAppColor.color
         activityIndicator.startAnimating()
         activityIndicator.center = viewBackgroundLoading.center
         viewBackgroundLoading.addSubview(activityIndicator)

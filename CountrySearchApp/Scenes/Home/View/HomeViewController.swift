@@ -105,15 +105,15 @@ extension HomeViewController {
                 }
                 .store(in: &cancellables)
         
-//        // Observe error message
-//        countriesViewModel?.$errorMessage
-//                  .sink { [weak self] errorMessage in
-//                      guard let `self` = self else { return }
-//                      if let errorMessage = errorMessage {
-//                          self.showError(message: errorMessage)
-//                      }
-//                  }
-//                  .store(in: &cancellables)
+        // Observe error message
+        countriesViewModel?.$errorMessage
+                  .sink { [weak self] errorMessage in
+                      guard let `self` = self else { return }
+                      if let errorMessage = errorMessage {
+                          self.showError(message: errorMessage)
+                      }
+                  }
+                  .store(in: &cancellables)
 
            
         }
@@ -126,6 +126,12 @@ extension HomeViewController {
               self.present(hostingController, animated: true, completion: nil)
           })
        }
+   
+   private func showError(message: String) {
+        let alertController = UIAlertController(title: "Location Permission Denied", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alertController, animated: true)
+    }
     
 }
 
