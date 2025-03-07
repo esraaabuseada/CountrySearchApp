@@ -17,7 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeCell" customModule="CountrySearchApp" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeCell" customModule="CountrySearchApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -27,37 +27,37 @@
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0y-CB-fmO" userLabel="Container View">
                         <rect key="frame" x="10" y="10" width="373" height="100"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AXl-2R-DRB" userLabel="Data Stack View">
-                                <rect key="frame" x="10" y="2" width="321" height="96"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="AXl-2R-DRB" userLabel="Data Stack View">
+                                <rect key="frame" x="10" y="10" width="321" height="80"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4qL-Wm-DDg" userLabel="Capital Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="321" height="43"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd0-Dv-Gu0">
-                                                <rect key="frame" x="0.0" y="0.0" width="321" height="19"/>
-                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="14.666666666666666"/>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
                                                 <color key="textColor" name="TitlesTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cairo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STo-hq-kcX">
-                                                <rect key="frame" x="0.0" y="24" width="321" height="19"/>
-                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="19.666666666666664" width="321" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Kn-by-fJ9" userLabel="Currency Stack View">
-                                        <rect key="frame" x="0.0" y="53" width="321" height="43"/>
+                                        <rect key="frame" x="0.0" y="46" width="321" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2y-Bt-5T3">
-                                                <rect key="frame" x="0.0" y="0.0" width="321" height="19"/>
-                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="14.666666666666666"/>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
                                                 <color key="textColor" name="TitlesTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64I-7T-YeB">
-                                                <rect key="frame" x="0.0" y="24" width="321" height="19"/>
-                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="19.666666666666671" width="321" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="15"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -74,16 +74,19 @@
                                 <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system">
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteContryTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VmO-Cv-uC9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="AXl-2R-DRB" secondAttribute="bottom" constant="2" id="ZDu-Xr-fn9"/>
+                            <constraint firstAttribute="bottom" secondItem="AXl-2R-DRB" secondAttribute="bottom" constant="10" id="ZDu-Xr-fn9"/>
                             <constraint firstItem="WVM-Of-bPq" firstAttribute="leading" secondItem="AXl-2R-DRB" secondAttribute="trailing" constant="2" id="bad-G8-WHM"/>
                             <constraint firstItem="WVM-Of-bPq" firstAttribute="top" secondItem="Y0y-CB-fmO" secondAttribute="top" constant="20" id="h7w-Ie-cie"/>
                             <constraint firstItem="AXl-2R-DRB" firstAttribute="leading" secondItem="Y0y-CB-fmO" secondAttribute="leading" constant="10" id="hYQ-uK-VO6"/>
                             <constraint firstAttribute="trailing" secondItem="WVM-Of-bPq" secondAttribute="trailing" constant="10" id="iwL-Fu-Ypf"/>
-                            <constraint firstItem="AXl-2R-DRB" firstAttribute="top" secondItem="Y0y-CB-fmO" secondAttribute="top" constant="2" id="sWj-cx-Bp2"/>
+                            <constraint firstItem="AXl-2R-DRB" firstAttribute="top" secondItem="Y0y-CB-fmO" secondAttribute="top" constant="10" id="sWj-cx-Bp2"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
@@ -113,22 +116,26 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <connections>
+                <outlet property="capitalLabel" destination="STo-hq-kcX" id="fgl-xO-htp"/>
+                <outlet property="currencyLabel" destination="64I-7T-YeB" id="uXN-WN-Cp6"/>
+            </connections>
             <point key="canvasLocation" x="26" y="20"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="trash" catalog="system" width="117" height="128"/>
         <namedColor name="TitlesTextColor">
-            <color red="0.48701785154815702" green="0.47558841967769316" blue="0.49366060237294618" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.48627450980392156" green="0.47450980392156861" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

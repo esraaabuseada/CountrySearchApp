@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         AppManager.initWindow(windowScene: windowScene)
         self.window = AppManager.shared.window
         self.window?.backgroundColor = .white
-        AppManager.setRootViewController(view: HomeViewController())
+        AppManager.setRootViewController(view: Container.embedVCInNavController(Container.getHomeViewControllerr()))
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

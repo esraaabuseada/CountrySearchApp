@@ -92,7 +92,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="txb-BV-wYs" secondAttribute="trailing" id="IVr-nE-MgS"/>
                 <constraint firstItem="txb-BV-wYs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="bhj-CZ-6lA"/>
@@ -104,9 +104,6 @@
     </objects>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

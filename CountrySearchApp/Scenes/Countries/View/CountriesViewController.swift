@@ -40,9 +40,6 @@ class CountriesViewController: BaseViewController {
         
         setUpTheScreen()
         bindViewModel()
-        
-        
-    
     }
     
     override func viewWillAppear(_ animated: Bool) {

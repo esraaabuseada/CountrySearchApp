@@ -36,7 +36,7 @@ class CountriesViewModel: BaseViewModel, ObservableObject {
                     self.filteredCountries = countries
                     self.isLoading = false // Stop loading
                     
-           
+           print(countries)
             case .failure(let error):
                 DispatchQueue.main.async {
                     self.errorMessage = "Failed to load countries: \(error.localizedDescription)"
@@ -76,7 +76,7 @@ class CountriesViewModel: BaseViewModel, ObservableObject {
     }
     
     // Remove country from the selected list
-    private func removeCountryFromSelection(country: Country) {
+    func removeCountryFromSelection(country: Country) {
         selectedCountries.removeAll { $0.name == country.name }
     }
 }

@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import UIKit
+
+class HomeModule {
+
+    class func createModule(viewModel: CountriesViewModel) -> UIViewController {
+        let view = HomeViewController(viewModel: viewModel)
+        return view
+
+    }
+}

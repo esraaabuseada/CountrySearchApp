@@ -24,7 +24,7 @@ extension AppDelegate {
     func setRoot() {
         AppManager.initWindow()
         self.window = AppManager.getWindow()
-        AppManager.setRootViewController(view: Container.embedVCInNavController(HomeViewController()))
+        AppManager.setRootViewController(view: Container.embedVCInNavController(Container.getHomeViewControllerr()))
     }
     
     

@@ -10,7 +10,12 @@ import UIKit
 
 class Container {
     
-   
+    class func getHomeViewControllerr(
+        viewModel: CountriesViewModel = CountriesViewModel()) -> UIViewController {
+            let viewController = HomeModule.createModule(viewModel: viewModel)
+        return viewController
+    }
+    
     class func getCountriesViewControllerr(
         viewModel: CountriesViewModel = CountriesViewModel()) -> UIViewController {
             let viewController = CountriesModule.createModule(viewModel: viewModel)
