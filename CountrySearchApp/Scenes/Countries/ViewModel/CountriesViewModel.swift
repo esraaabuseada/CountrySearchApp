@@ -26,8 +26,6 @@ class CountriesViewModel: BaseViewModel, ObservableObject {
         super.init()
         
         self.fetchCountries()
-//        self.setupLocationManager()
-        
     }
     
     

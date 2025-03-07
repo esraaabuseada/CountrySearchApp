@@ -46,9 +46,7 @@
 		468430BA2D78A2D800C2B7C6 /* anton.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 468430B72D78A2D800C2B7C6 /* anton.ttf */; };
 		468430BB2D78A2D800C2B7C6 /* cairo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 468430B82D78A2D800C2B7C6 /* cairo.ttf */; };
 		468430BE2D78A37200C2B7C6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430BD2D78A37200C2B7C6 /* Fonts.swift */; };
-		468430C32D791C6C00C2B7C6 /* HomeWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430C22D791C6C00C2B7C6 /* HomeWebService.swift */; };
 		468430C52D791C7D00C2B7C6 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430C42D791C7D00C2B7C6 /* HomeWireFrame.swift */; };
-		468430C72D791C9500C2B7C6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430C62D791C9500C2B7C6 /* HomeViewModel.swift */; };
 		468430CA2D791CA600C2B7C6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430C82D791CA600C2B7C6 /* HomeViewController.swift */; };
 		468430CB2D791CA600C2B7C6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 468430C92D791CA600C2B7C6 /* HomeViewController.xib */; };
 		468430CF2D791E9600C2B7C6 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468430CD2D791E9600C2B7C6 /* HomeCell.swift */; };
@@ -112,9 +110,7 @@
 		468430B72D78A2D800C2B7C6 /* anton.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = anton.ttf; sourceTree = "<group>"; };
 		468430B82D78A2D800C2B7C6 /* cairo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cairo.ttf; sourceTree = "<group>"; };
 		468430BD2D78A37200C2B7C6 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		468430C22D791C6C00C2B7C6 /* HomeWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWebService.swift; sourceTree = "<group>"; };
 		468430C42D791C7D00C2B7C6 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
-		468430C62D791C9500C2B7C6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		468430C82D791CA600C2B7C6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		468430C92D791CA600C2B7C6 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		468430CD2D791E9600C2B7C6 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
@@ -382,9 +378,7 @@
 		468430BF2D791C3100C2B7C6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				468430C12D791C5000C2B7C6 /* ViewModel */,
 				468430C02D791C4800C2B7C6 /* View */,
-				468430C22D791C6C00C2B7C6 /* HomeWebService.swift */,
 				468430C42D791C7D00C2B7C6 /* HomeWireFrame.swift */,
 			);
 			path = Home;
@@ -398,14 +392,6 @@
 				468430C92D791CA600C2B7C6 /* HomeViewController.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		468430C12D791C5000C2B7C6 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				468430C62D791C9500C2B7C6 /* HomeViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		468430CC2D791E7C00C2B7C6 /* Cell */ = {
@@ -574,7 +560,6 @@
 				468430DE2D79624C00C2B7C6 /* NetworkManager.swift in Sources */,
 				467879A42D77DEFA004146C4 /* AppDelegate.swift in Sources */,
 				461D14912D7A2DAC00D9EE96 /* BaseViewController.swift in Sources */,
-				468430C72D791C9500C2B7C6 /* HomeViewModel.swift in Sources */,
 				468430E22D79663300C2B7C6 /* CountriesViewModel.swift in Sources */,
 				468430CA2D791CA600C2B7C6 /* HomeViewController.swift in Sources */,
 				461D14822D79EE8800D9EE96 /* Constants.swift in Sources */,
@@ -592,7 +577,6 @@
 				461D14752D79D11D00D9EE96 /* CountriesViewController.swift in Sources */,
 				46787A032D78962E004146C4 /* NSObject+Extension.swift in Sources */,
 				461D14922D7A2DAC00D9EE96 /* BaseViewModel.swift in Sources */,
-				468430C32D791C6C00C2B7C6 /* HomeWebService.swift in Sources */,
 				46787A052D78962E004146C4 /* UINavigationController+Extension.swift in Sources */,
 				468430E02D7962C400C2B7C6 /* CountriesWebService.swift in Sources */,
 				461D148D2D7A2DA000D9EE96 /* Loader.swift in Sources */,

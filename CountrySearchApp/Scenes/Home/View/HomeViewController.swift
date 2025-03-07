@@ -37,7 +37,6 @@ class HomeViewController: BaseViewController {
 
         setUpTheScreen()
         bindViewModel()
-//        countriesViewModel?.fetchCountries()
     }
 
     override func viewWillAppear(_ animated: Bool) {
