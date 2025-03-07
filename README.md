@@ -30,5 +30,10 @@
    - Display country capital and currency
 
 5. Unit Test:
+   - Test Fetch Countries
+   -  Test Search Countries
+   -  Test Country Selection Add
+   -  Test Country Selection Remove
+   -  Test Selection Limitation
    
 
