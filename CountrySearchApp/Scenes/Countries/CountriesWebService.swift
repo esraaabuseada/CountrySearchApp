@@ -10,15 +10,15 @@ import Foundation
 protocol CountriesWebServiceProtocol: AnyObject {
     
     
-    func fetchCountries(completion: @escaping (Result<[Country], Error>) -> Void)
+    func fetchCountries(url: String, completion: @escaping (Result<[Country], Error>) -> Void)
 }
 
 class CountriesWebService: CountriesWebServiceProtocol {
     
     static let shared = CountriesWebService()
     
-    func fetchCountries(completion: @escaping (Result<[Country], Error>) -> Void)  {
-        let url = "https://restcountries.com/v2/all"
+    func fetchCountries(url: String, completion: @escaping (Result<[Country], Error>) -> Void)  {
+       
         
         NetworkManager.shared.get(url) { (result: Result<[Country], NetworkError>) in
             switch result {

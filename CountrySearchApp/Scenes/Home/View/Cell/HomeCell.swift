@@ -14,7 +14,7 @@ protocol HomeCellDelegate: AnyObject {
 class HomeCell: UITableViewCell {
 
     private weak var delegate: HomeCellDelegate?
-    private var country = Country(name: "", capital: "")
+    private var country = Country(name: "", capital: "", currencies: [])
     
     
     @IBOutlet private weak var capitalLabel: UILabel!
@@ -30,7 +30,7 @@ class HomeCell: UITableViewCell {
         self.delegate = delgate
         
         self.capitalLabel.text = country.capital
-       // self.currencyLabel.text = country.currencies[0].name
+        self.currencyLabel.text = country.currencies?[0].code
     }
     
     @IBAction func deleteContryTapped(_ sender: UIButton) {

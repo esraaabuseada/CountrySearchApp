@@ -36,6 +36,7 @@ class HomeViewController: BaseViewController {
 
         setUpTheScreen()
         bindViewModel()
+       
     }
 
     override func viewWillAppear(_ animated: Bool) {

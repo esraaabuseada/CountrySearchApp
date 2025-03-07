@@ -25,5 +25,9 @@
 		<string>cairo.ttf</string>
 		<string>tajawal_medium.ttf</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location to add the country of your current location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need your location to add the country of your current location</string>
 </dict>
 </plist>

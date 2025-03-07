@@ -11,6 +11,6 @@ class Constant {
     
     struct Keys {
         
-        
+      static let apiURL = "https://restcountries.com/v2/all"
     }
 }

@@ -11,7 +11,7 @@ struct Country: Codable, Identifiable {
     var id: String { name }
     let name: String
     let capital: String?
-    let currencies: [Currency] = []
+    let currencies: [Currency]?
    
     
     enum CodingKeys: String, CodingKey {
