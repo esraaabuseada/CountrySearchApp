@@ -37,12 +37,12 @@ class HomeViewController: BaseViewController {
 
         setUpTheScreen()
         bindViewModel()
-       
+//        countriesViewModel?.fetchCountries()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+       
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -143,7 +143,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                  as? HomeCell else { return UITableViewCell() }
          
          if let country = countriesViewModel?.selectedCountries[indexPath.row] {
-             cell.bindCell(country: country, delgate: self)
+             if indexPath.row == 0 {
+                 cell.bindCell(country: country, delgate: self, canDelete: false)
+             } else {
+                 cell.bindCell(country: country, delgate: self)
+             }
 
          }
            return cell
@@ -159,7 +163,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
        }
        
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true  // Allow editing (deleting) rows
+        // Allow editing (deleting) rows
+        if indexPath.row == 0 {
+            // do not delete first country of current location
+            return false
+        } else {
+            return true
+        }
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {

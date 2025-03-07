@@ -44,7 +44,7 @@ class CountriesViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        countriesViewModel?.fetchCountries()
+        // countriesViewModel?.fetchCountries()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

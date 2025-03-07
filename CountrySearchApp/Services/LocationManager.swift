@@ -14,6 +14,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     private var locationManager: CLLocationManager?
     private var locationSubject = PassthroughSubject<CLLocation, Error>()
     private var permissionDeniedSubject = PassthroughSubject<Void, Never>()
+    private var currentLocation: CLLocation?
     
     override init() {
         super.init()

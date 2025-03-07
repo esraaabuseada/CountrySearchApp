@@ -12,13 +12,14 @@ struct Country: Codable, Identifiable {
     let name: String
     let capital: String?
     let currencies: [Currency]?
-   
+    let latlng : [Double]?
     
     enum CodingKeys: String, CodingKey {
         
         case name
         case capital
         case currencies
+        case latlng
        
     }
     

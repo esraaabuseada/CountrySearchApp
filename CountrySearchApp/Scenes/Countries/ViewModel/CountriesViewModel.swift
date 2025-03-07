@@ -15,6 +15,7 @@ class CountriesViewModel: BaseViewModel, ObservableObject {
     @Published var selectedCountries: [Country] = []  // List of selected countries
     @Published var filteredCountries: [Country] = []  // List of filtered countries based on search
     @Published var errorMessage: String? = nil  // Error message for exceeding limit
+   
     
     private weak var service: CountriesWebServiceProtocol!
     private var locationManager: LocationManager = LocationManager()
@@ -23,7 +24,9 @@ class CountriesViewModel: BaseViewModel, ObservableObject {
     init(service: CountriesWebServiceProtocol = CountriesWebService.shared) {
         self.service = service
         super.init()
-       // self.setupLocationManager()
+        
+        self.fetchCountries()
+//        self.setupLocationManager()
         
     }
     
@@ -38,7 +41,7 @@ class CountriesViewModel: BaseViewModel, ObservableObject {
                     self.countries = countries
                     self.filteredCountries = countries
                     self.isLoading = false // Stop loading
-                    
+                self.setupLocationManager()
             case .failure(let error):
                 DispatchQueue.main.async {
                     self.errorMessage = "Failed to load countries: \(error.localizedDescription)"
@@ -82,14 +85,14 @@ class CountriesViewModel: BaseViewModel, ObservableObject {
         selectedCountries.removeAll { $0.name == country.name }
     }
     
-    private func setupLocationManager() {
+   func setupLocationManager() {
         // Start location updates
                self.locationManager.startLocationUpdates()
                
                // Handle location updates and permission denial
                self.locationManager.locationPublisher()
                    .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] location in
-                       self?.fetchCountryBasedOnLocation(location)
+                       self?.findNearestCountryBasedOnLocation(location)
                    })
                    .store(in: &cancellables)
                
@@ -101,30 +104,21 @@ class CountriesViewModel: BaseViewModel, ObservableObject {
     }
     
     // Fetch country data based on location coordinates
-        private func fetchCountryBasedOnLocation(_ location: CLLocation) {
-            isLoading = true
-            let lat = location.coordinate.latitude
-            let lon = location.coordinate.longitude
-            
-            // Using a mock API URL for simplicity
-            guard let url = URL(string: "\(Constant.Keys.apiURL)?lat=\(lat)&lon=\(lon)") else {
-                isLoading = false
-                return
-            }
-            
-            service.fetchCountries(url: url.absoluteString) { [weak self] result in
-                guard let `self` = self else { return }
-                switch result {
-                case .success(let countries):
-                    self.selectedCountries = countries
-                    
-                case .failure(let error):
-                    DispatchQueue.main.async {
-                        self.errorMessage = "Failed to load countries: \(error.localizedDescription)"
-                        self.isLoading = false // Stop loading
-                    }
+    private func findNearestCountryBasedOnLocation(_ currentLocation: CLLocation) {
+       
+        guard !countries.isEmpty else { return }
+        // Calculate distance for each country and sort by the smallest distance
+                let sortedCountries = countries.map { country -> (Country, CLLocationDistance) in
+                    let countryLocation = CLLocation(latitude: country.latlng?[0] ?? 0.0, longitude: country.latlng?[1] ?? 0.0)
+                    let distance = currentLocation.distance(from: countryLocation)
+                    return (country, distance)
                 }
-            }
-        }
+                .sorted { $0.1 < $1.1 }  // Sort countries by distance
+        
+        if let nearestCountry = sortedCountries.first?.0 {
+            self.selectedCountries.append(nearestCountry)
+               }
+       
+    }
 }
 
